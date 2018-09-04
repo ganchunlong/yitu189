@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery3.3.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .panel.ll {
+        background: #1a1a1a;
+        border-radius: 0;
+        margin-bottom: 0;
+        border-bottom: 1px #1c1c1c solid;
+    }
+
+    .panel {
+        border-radius: 0;
+        margin-bottom: 0;
+        border: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(104, 107, 108);
+    }
+
+    a:active {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:active {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    a:focus {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        margin: 0;
+        list-style: none;
+    }
+
+    .yang {
+        padding: 20px;
+        display: block;
+        background: rgb(28, 36, 49);
+
+    }
+
+    .yang2 {
+        padding: 10px;
+        display: block;
+        background: #1a1a1a;
+
+    }
+
+    .yang3 ul {
+        background: #1a1a1a;
+    }
+
+    li {
+        color: rgb(104, 107, 108);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bbbb {
+        color: white;
+        font-size: 24px;
+        padding: 20px;
+        width: 300px;
+        background-color: rgb(35, 172, 56);
+        color: white;
+    }
+
+    span {
+        margin-right: 5px;
+    }
+</style>
+
+<body>
+    <div class="bbbb">中国邮政</div>
+    <div id="accordion" style="width:300px;">
+
+        <div class="panel ll">
+            <a data-toggle="collapse" href="#item1" data-parent="#accordion" class="yang">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;控制面板</a>
+            <div id="item1" class="collapse in">
+                <ul id="ccc">
+                  
+                        <div class="panel">
+                            <a href="#item1-1" data-toggle="collapse" data-parent="#ccc" class="yang2">
+                                表格组件</a>
+                            <div id="item1-1" class="collapse yang3">
+                                <ul>
+                                    <li>第二级菜单1</li>
+                                    <li>第二级菜单1</li>
+                                    <li>第二级菜单1</li>
+                                </ul>
+                            </div>
+                        </div>
+                 
+                  
+                        <div class="panel">
+                            <a href="#item1-2" data-toggle="collapse" data-parent="#ccc" class="yang2">
+                                表格组件</a>
+                            <div id="item1-2" class="collapse yang3">
+                                <ul>
+                                    <li>第二级菜单1</li>
+                                    <li>第二级菜单1</li>
+                                    <li>第二级菜单1</li>
+                                </ul>
+                            </div>
+                        </div>
+                
+               
+                        <div class="panel">
+                            <a href="#item1-3" data-toggle="collapse" data-parent="#ccc" class="yang2">
+                                表格组件</a>
+                            <div id="item1-3" class="collapse yang3">
+                                <ul>
+                                    <li>第二级菜单1</li>
+                                    <li>第二级菜单1</li>
+                                    <li>第二级菜单1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="panel ll">
+            <a href="#item2" data-toggle="collapse" data-parent="#accordion" class="yang">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;表格组件</a>
+            <div id="item2" class="collapse">
+                <ul>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel ll">
+            <a href="#item3" data-toggle="collapse" data-parent="#accordion" class="yang">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;表单组件</a>
+            <div id="item3" class="collapse">
+                <ul>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel ll">
+            <a href="#item4" data-toggle="collapse" data-parent="#accordion" class="yang">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;图表组件</a>
+            <div id="item4" class="collapse">
+                <ul>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel ll">
+            <a href="#item5" data-toggle="collapse" data-parent="#accordion" class="yang">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;多级菜单</a>
+            <div id="item5" class="collapse">
+                <ul>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel ll">
+            <a href="#item6" data-toggle="collapse" data-parent="#accordion" class="yang">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;单页组件</a>
+            <div id="item6" class="collapse">
+                <ul>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                    <li>第二级菜单1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <br>
+    <br>
+    <div class="container">
+
+        <button class="btn btn-default collapsed btn-block" data-toggle="collapse" data-target="#well">asdfsad</button>
+
+        <br>
+        <br>
+        <div class="panel panel-default collapse" id="well">
+
+            <div class="panel-heading">dsfa</div>
+            <div class="panel-body">fsdaafdsaaaaaaaafdsa</div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-default collapsed" data-toggle="collapse" data-target="#well2">dfsa</button>
+
+        <br>
+        <br>
+        <div class="panel panel-default collapse" id="well2">
+
+            <div class="panel-heading">dsfa</div>
+            <div class="panel-body">fsdaafdsaaaaaaaafdsa</div>
+
+        </div>
+
+
+
+    </div>
+
+ -->
+
+
+
+
+</body>
+
+</html>

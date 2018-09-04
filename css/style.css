@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-stacked>li+li{
+    margin-top:0;
+}
+#img2{
+    position: absolute;
+    top:-5px;
+    transform: scale(0.9);
+    transition: all 0.4s ease-in;
+    z-index: 1;
+}
+#prev{
+position: absolute;
+top:25%;
+left: 30px;
+}
+#prev::after{
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background: #1a1a1a;
+    opacity: 0.4;
+    top:-15px;
+    left: -13px;
+}
+#next{
+    position: absolute;
+    top:25%;
+    right: 30px;
+}
+#next::after{
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background: #1a1a1a;
+    opacity: 0.4;
+    top:-15px;
+    left: -13px;
+}
+.bb{
+    display: block!important;
+}
+.title{
+    position: absolute;
+    top:141px;
+    text-align: center;
+    
+}
+#img1{position: absolute;
+    z-index: 1;
+    top:0;
+    transform: scale(0);
+    transition: all 0.4s ease-in;
+}
+.banner{
+    background-image: url(../images/ppt_bg.jpg);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    height: 220px;
+    overflow: hidden;
+    color: #fff;
+}
+#navvv{
+    display: none;
+    font-size: 16px;
+}
+@media screen and (min-width:750px){
+    #navvv{
+
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px){
+    #navvv{
+        position: relative;  
+        display: block;
+    }
+
+
+   
+}
+@media screen and (min-width:1000px){
+
+    #navvv{
+        
+         
+        
+    }
+
+}
+@media screen and (min-width:1200px){
+    #img2{
+        transform: scale(0);
+    }
+    #img1{
+        transform: scale(1);
+    }
+
+    
+}
